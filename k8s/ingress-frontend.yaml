@@ -10,7 +10,7 @@ spec:
   ingressClassName: nginx  # ← Required for modern clusters
   tls:
     - hosts:
-        - 192.168.49.2  # ← Optional: remove if using IP-only access
+        - final-project.com  # ← Optional: remove if using IP-only access
       secretName: bookstore-tls  # ← Optional: TLS secret for HTTPS
   rules:
     - host: final-project.com  # ← Optional: remove if using IP-only access
